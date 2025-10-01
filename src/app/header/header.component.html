@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-blur">
+<div class="container">
+<a class="navbar-brand d-flex align-items-center" href="#">
+<img src="assets/logo.jpg" alt="logo" style="height:40px;" class="me-2"/>
+<div>
+<div style="font-weight:700">Dr. Care</div>
+<small class="text-muted">Trusted Healthcare</small>
+</div>
+</a>
+
+
+<button class="navbar-toggler" type="button" (click)="toggle()">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div [ngClass]="{'collapse navbar-collapse': true, 'show': mobileOpen}">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Why Us</a></li>
+<li class="nav-item"><a class="nav-link" href="#testimonials">Patients</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+<li class="nav-item ms-3"><button nz-button class="btn-primary-gradient btn px-4 py-2">Book Appointment</button></li>
+</ul>
+</div>
+</div>
+</nav>

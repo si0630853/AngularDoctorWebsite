@@ -1,0 +1,18 @@
+<section id="testimonials" class="section-padding">
+  <div class="container-fluid">
+    <div class="row mb-4 text-center">
+      <div class="col">
+        <h2 id="typewriter-heading" #heading class="section-title"></h2>
+        <p id="typewriter-sub" #subText class="section-sub"></p>
+      </div>
+    </div>
+
+    <!-- Scrollable testimonials -->
+    <div class="testimonials-scroll d-flex">
+      <div class="testi-card p-4 text-center" *ngFor="let t of testimonials">
+        <p class="mb-3">“{{t.text}}”</p>
+        <div class="fw-bold">{{t.name}}</div>
+      </div>
+    </div>
+  </div>
+</section>

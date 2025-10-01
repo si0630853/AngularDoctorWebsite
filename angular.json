@@ -22,12 +22,22 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./node_modules/@ant-design/icons-angular/src/inline-svg/",
+                "output": "/assets/"
+              }
             ],
             "styles": [
-              "src/styles.css"
+              "src/theme.less",
+              "node_modules/aos/dist/aos.css",
+              "src/styles.scss",
+              "node_modules/swiper/swiper-bundle.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/aos/dist/aos.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f5fc4553-1996-4932-a457-993a73f80098"
   }
 }

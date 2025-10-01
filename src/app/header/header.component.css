@@ -1,0 +1,6 @@
+.navbar{ padding: .9rem 0; transition: all .35s ease; }
+.navbar .nav-link{ margin-right: 1rem; font-weight:600; }
+.navbar .btn-primary-gradient{ color: #fff; box-shadow: 0 8px 20px rgba(13,110,253,0.12); }
+
+
+@media(min-width:992px){ .navbar{ padding:1.2rem 0; } }

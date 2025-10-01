@@ -1,0 +1,10 @@
+.feature-box {
+  padding: 1rem;
+  border-left: 4px solid var(--brand);
+  transition: all 0.3s ease;
+}
+
+.feature-box:hover {
+  background: rgba(13, 110, 253, 0.05);
+  border-left-color: #6610f2;
+}

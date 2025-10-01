@@ -1,0 +1,101 @@
+/* Section */
+.services-section {
+  background: rgba(13, 110, 253, 0.05);
+  padding: 70px 0;
+  overflow: hidden;
+}
+
+/* Scroll container */
+.services-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  padding: 20px 0;
+}
+.services-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.service-card {
+  min-width: 260px;
+  max-width: 280px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.service-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Scrollable description */
+.service-desc {
+  max-height: 100px;
+  overflow-y: auto;
+  padding-right: 6px;
+  text-align: left;
+}
+.service-desc::-webkit-scrollbar {
+  width: 5px;
+}
+.service-desc::-webkit-scrollbar-thumb {
+  background: #0d6efd;
+  border-radius: 4px;
+}
+
+/* Gradient Icon Circle */
+.icon-box {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.3);
+  transition: transform 0.4s ease;
+}
+.service-card:hover .icon-box {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Heading */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0a192f;
+  margin-bottom: 10px;
+}
+.section-sub {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Typewriter Effect */
+#typewriter-heading {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0a192f;
+  border-right: 3px solid #0d6efd;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding-right: 5px;
+  animation: blinkCursor 0.8s infinite;
+}
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}

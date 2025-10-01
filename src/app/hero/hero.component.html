@@ -1,0 +1,17 @@
+<section class="hero">
+  <div class="slideshow">
+    <div class="slide" *ngFor="let img of images; let i = index" [class.active]="i === currentSlide">
+      <img [src]="img" alt="Slide Image" />
+      <div class="overlay"></div>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <h1 id="typed-heading" class="typed-text"></h1>
+    <p class="sub-text">In the good hands of science.</p>
+    <div class="btn-group">
+      <button nz-button class="btn-primary-gradient btn-lg px-4 py-2">Book Appointment</button>
+      <button nz-button nzType="default" class="btn btn-outline-light px-4 py-2">Contact Us</button>
+    </div>
+  </div>
+</section>
